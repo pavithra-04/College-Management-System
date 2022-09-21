@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Top Universities";
+}
+
+@*@if (Session["Email"] != null)
+            {
+
+            }*@
+
+<h2 style="color: #337ab7;padding-top:30px;padding-bottom:15px;">Top 10 Universities in India</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   
+    <style>
+        table {
+            width: 80%;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 18px;
+            text-align: left;
+            border-top: 1px solid #dee2e6;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr style="color: #337ab7">
+                <th>University Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Score</th>
+                <th>Rank</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Indian Institute of Science</td>
+                <td>Bangalore</td>
+                <td>Karnataka</td>
+                <td>82.28</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Jawaharlal Nehru University</td>
+                <td>New Delhi</td>
+                <td>Delhi</td>
+                <td>67.57</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Banaras Hindu University</td>
+                <td>Varanasi</td>
+                <td>Uttar Pradesh</td>
+                <td>63.52</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>University of Hyderabad</td>
+                <td>Hyderabad</td>
+                <td>Telangana</td>
+                <td>61.85</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Calcutta University</td>
+                <td>Kolkata</td>
+                <td>West Bengal</td>
+                <td>60.87</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Jadavpur University</td>
+                <td>Kolkata</td>
+                <td>West Bengal</td>
+                <td>60.53</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Anna University</td>
+                <td>Chennai</td>
+                <td>Tamil Nadu</td>
+                <td>60.35</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Amrita Vishwa Vidyapeetham</td>
+                <td>Coimbatore</td>
+                <td>Tamil Nadu</td>
+                <td>59.22</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Manipal Academy of Higher Education</td>
+                <td>Manipal</td>
+                <td>Karnataka</td>
+                <td>58.50</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Savitribai Phule Pune University</td>
+                <td>Pune</td>
+                <td>Maharashtra</td>
+                <td>58.40</td>
+                <td>10</td>
+            </tr>
+           
+        </tbody>
+    </table>
+</body>
+</html>

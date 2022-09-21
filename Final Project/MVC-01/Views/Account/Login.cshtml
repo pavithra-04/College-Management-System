@@ -1,0 +1,60 @@
+﻿@model MVC_01.Models.LoginModel
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Sign in</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <fieldset style="width:1000px; padding-top:85px; padding-bottom:30px;">
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+               
+                <div class="main">
+                    <h3 style="font-family: 'Pacifico', cursive; font-size: 2.0rem; padding-bottom: 25px; color: #337ab7">Login Here!</h3>
+                    <div class="container" style="padding-left:30px">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email)
+                            @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "badge badge-danger" })
+
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password)
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "badge badge-danger" })
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" align="center" class="btn btn-primary" value="Login" />
+                        </div>
+                        @if (TempData["Success"] != null)
+                        {
+                            <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+                        }
+                    </div>
+                    @*<a class="submit" value="Login">Login</a>*@
+                    @*<p class="forgot" align="center"><a href="#">Don't have an account?</p>*@
+
+
+                </div>
+            }
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

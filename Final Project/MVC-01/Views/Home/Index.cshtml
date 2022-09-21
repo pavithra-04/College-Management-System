@@ -1,0 +1,453 @@
+﻿
+
+<style>
+
+    body {
+@*        background-image: url("https://college.gpatindia.com/uploads/colleges/madras-medical-college-mmc-chennai15776904031.jpg");
+*@        width: 100%;
+        height: 100%;
+
+    }
+    .hero:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        @*        background-color: #e3f2fd;
+*@ @*       background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100% );
+*@
+    }
+    .whatever-text {
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    .player__icon {
+        opacity: 0.9;
+    }
+
+    .player__time {
+        color: #e3f2fd;
+        text-shadow: 0 0 5px #e3f2fd;
+    }
+    .hero{
+        padding-top:10px;
+    }
+    .hero__content {
+        position: absolute;
+        top: 7px;
+        left: 100px;
+    }
+    .hero {
+        margin: 3%;
+        position: relative;
+    }
+    img {
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-container {
+  padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/* RESPONSIVE */
+
+@@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+@*-----------------------------CARDS----------------------------*@
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    float: right;
+}
+
+@@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+
+    }
+    .header p {
+        width: 30%;
+    }
+
+}
+</style>
+
+<div class="container-fluid">
+
+    @*https://college.gpatindia.com/uploads/colleges/madras-medical-college-mmc-chennai15776904031.jpg*@
+    <div class="hero">
+        <img src="https://image.shutterstock.com/image-vector/university-building-260nw-305209646.jpg" alt="" height="100%" width="100%">
+        <div class="hero__content">
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header">
+    <h1 style="font-family: 'Pacifico', cursive; font-size: 2.5rem;padding-bottom:15px; ">A One-Stop Solution for Your Education Needs!</h1>
+   
+    <p>Reset your search strategy by browsing through our lists of top colleges,exams,courses and careers based on your area of interest!
+    </p>
+</div>
+<div class="row1-container">
+    <div class="box box-down cyan">
+        <h2>Colleges</h2>
+        <p>One platform to know more about 100+ colleges</p>
+        <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+    </div>
+
+    <div class="box red">
+        <h2>Exams</h2>
+        <p>Check out Exam patterns and Syllabus and best books</p>
+        <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+    </div>
+
+    <div class="box box-down blue">
+        <h2>Courses</h2>
+        <p>Glance at Eligibility criteria,admission process and course fee.</p>
+        <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+    </div>
+</div>
+<div class="row2-container">
+    <div class="box orange">
+        <h2>Careers</h2>
+        <p>Looking to get the best career guidance?</p>
+        <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div>
+     
+    <div class="main-container">
+        <div class="heading">
+            <h1 class="heading__title">Get started by searching our education listings</h1>
+            <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Trending Career Options</a></p>
+        </div>
+        <div class="cards">
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">MBA <br />
+                </h2>
+                <h3>MBA in Business Administration  Course, Business Administration Eligibility, Career Options After Business Administration</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-2">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">B.Tech in AI and Data Science </h2>
+                <h3>Btech in CSE specialization in AI and Data Science | Eligibility criteria | Top colleges | Fees structure.</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-3">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">B.Tech in AI and Data Science </h2>
+                <h3>MBA in Business Administration  Course, Business Administration Eligibility, Career Options After Business Administration</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-4">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">BDS(BAchelor of Dental Surgery)</h2>
+                <h3>BDS Eligibility | BDS Admission | BDS Employment Area | Top Recruiting companies</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-5">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">BAMS</h2>
+                <h3>BAMS Course | BAMS Admission | BAMS Eligibility | Career options after BAMS</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">B.Tech in  Computer Science </h2>
+                <h3>Computer Science Eligibilty criteria | Fees Structure | B.TECH Computer Science Salary</h3>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
